@@ -114,13 +114,16 @@ const Tictactoe = () => {
 
   return (
     <div>
-        <h1>
-            Tic Tac Toe
-        </h1>
+        <div className="heading">
+            Tic Tac Toe              
+        </div>
+        <div className="info">
+            Turn up your volume!
+        </div>
             <Board playerTurn={playerTurn} tiles={tiles} onTileClick={handleTileClick} strikeClass={strikeClass}/>
             <Gameover gameState={gameState}/>
-            <Reset gameState={gameState} onReset={handleReset}/>
-        
+            <Reset gameState={gameState} onReset={handleReset}/> 
+                   
     </div>
   )
 }
